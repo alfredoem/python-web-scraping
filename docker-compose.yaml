@@ -1,0 +1,8 @@
+version: '2'
+services:
+  python_scraping_cli:
+    build: .
+    container_name: python_scraping_cli
+    volumes:
+      - ./app/:/app
+    command: python app/script.py
